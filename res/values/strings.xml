@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Password</string>
+    <string name="label_password">Password:</string>
+    <string name="label_length">Length:</string>
+    <string name="label_include">Include:</string>
+    <string name="label_exclude">Exclude:</string>
+    <string name="label_difficulty">Password strength:</string>
+    <string name="button_generate">Generate Password</string>
+    <string name="button_generate_widget">Generate</string>
+    <string name="checkbox_symbols">Punctuation &amp; symbols</string>
+    <string name="checkbox_numbers">Numerals</string>
+    <string name="checkbox_lower">Lowercase letters</string>
+    <string name="checkbox_upper">Uppercase letters</string>
+    <string name="app_title">Password generator</string>
+    <string name="menu_simple">Simple</string>
+    <string name="menu_advanced">Advanced</string>
+    <string name="menu_about">About</string>
+    <string name="difficulty_0">Very weak</string>
+    <string name="difficulty_1">Weak</string>
+    <string name="difficulty_2">Normal</string>
+    <string name="difficulty_3">Hard</string>
+    <string name="difficulty_4">Very hard</string>
+</resources>

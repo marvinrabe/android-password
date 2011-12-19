@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<ImageView android:id="@+id/logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5dp" android:src="@drawable/logo"></ImageView>
+	<TextView android:layout_below="@+id/logo" android:id="@+id/textView1" android:layout_width="fill_parent"
+	 android:layout_marginTop="20dp"
+	 android:layout_marginBottom="5dp"
+	 android:layout_marginLeft="5dp"
+	 android:layout_marginRight="5dp"
+	 android:text="Password Generator created by" android:layout_height="wrap_content">
+	 </TextView>
+	<TextView android:layout_below="@+id/textView1" android:id="@+id/textView2" android:layout_width="fill_parent"
+	 android:layout_marginTop="5dp"
+	 android:layout_marginBottom="0dp"
+	 android:layout_marginLeft="5dp"
+	 android:layout_marginRight="5dp"
+	 android:textStyle="bold"
+	 android:text="Marvin Thomas Rabe" android:layout_height="wrap_content">
+	 </TextView>
+	<TextView android:layout_below="@+id/textView2" android:id="@+id/textView3" android:layout_width="fill_parent"
+	 android:textSize="12sp"
+	 android:layout_marginTop="0dp"
+	 android:layout_marginBottom="5dp"
+	 android:layout_marginLeft="5dp"
+	 android:layout_marginRight="5dp"
+	 android:textStyle="bold"
+	 android:text="(m.rabe@echtzeitraum.de)" android:layout_height="wrap_content">
+	 </TextView>
+	<TextView android:layout_below="@+id/textView3" android:id="@+id/textView4" android:layout_width="fill_parent"
+	 android:layout_marginTop="20dp"
+	 android:layout_marginBottom="5dp"
+	 android:layout_marginLeft="5dp"
+	 android:layout_marginRight="5dp"
+	 android:textSize="11sp"
+	 android:text="Full source code is available on http://wiki.echtzeitraum.de/ . You can modify and redistribute it under the terms of the GPL Version 3." android:layout_height="wrap_content"
+	 android:linksClickable="true">
+	 </TextView>
+	<TextView android:layout_below="@+id/textView4" android:id="@+id/textView5" android:layout_width="fill_parent"
+	 android:layout_marginTop="20dp"
+	 android:layout_marginBottom="5dp"
+	 android:layout_marginLeft="5dp"
+	 android:layout_marginRight="5dp"
+	 android:textSize="11sp"
+	 android:text="Shape of “Shuffle” icon by GNOME icon artists also released under the terms of the GPL. “About” menu icon by Android developers. “Easy/Advanced” menu icon by androidicons.com released under the terms of the CC BY 3.0." android:layout_height="wrap_content">
+	 </TextView>
+	</RelativeLayout>
+</ScrollView>
