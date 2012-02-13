@@ -1,69 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:id="@+id/ScrollView"
+   <LinearLayout android:id="@+id/table"
 	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:layout_width="wrap_content" android:layout_height="wrap_content">
-	    <TextView
-        	android:id="@+id/password_label"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <TextView
+       	android:id="@+id/label_difficulty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:text="@string/label_difficulty"/>
+    <RadioGroup
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/difficulty">
+	    <RadioButton
+	        android:id="@+id/difficulty_0"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-		    android:text="@string/label_password"/>
-	    <EditText
-	        android:id="@+id/password"
-			android:layout_below="@id/password_label"
+	        android:text="@string/difficulty_0"
+	        android:textColor="#900000" />
+	    <RadioButton
+	        android:id="@+id/difficulty_1"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-	        android:maxLines="5"
-	        android:singleLine="true"
-	        android:editable="false"/>
-	    <LinearLayout android:id="@+id/table"
-		    android:layout_height="wrap_content"
-		    android:layout_width="fill_parent"
-		    android:orientation="vertical"
-		    android:layout_margin="5dp"
-		    android:layout_below="@+id/password" >
-			<View
-		        android:layout_height="2dp"
-	        	android:layout_marginTop="5dp"
-	        	android:layout_marginBottom="10dp"
-				android:layout_width="fill_parent"
-		        android:background="#FF909090" />
-		    <TextView
-	        	android:id="@+id/label_difficulty"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-			    android:text="@string/label_difficulty"/>
-			<SeekBar android:id="@+id/difficulty_bar"
-				android:layout_height="fill_parent"
-				android:layout_width="fill_parent"
-				android:layout_margin="5dp"
-				android:max="4"
-				android:progress="1" />
-		    <TextView
-	        	android:id="@+id/difficulty_state"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-			    android:text="..."
-			    android:textColor="#FFFFFF"
-			    android:gravity="center_horizontal"
-				android:layout_margin="5dp"
-				android:padding="5dp" />
-			<View
-		        android:layout_height="2dp"
-				android:layout_width="fill_parent"
-	       		android:layout_marginTop="10dp"
-		        android:background="#FF909090" />
-		</LinearLayout>
-	    <Button
-	        android:id="@+id/ok"
-	        android:layout_width="wrap_content"
+	        android:text="@string/difficulty_1"
+	        android:textColor="#B95603" />
+	    <RadioButton
+	        android:id="@+id/difficulty_2"
+	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@id/table"
-	        android:layout_alignParentRight="true"
-	        android:layout_marginLeft="10dp"
-	        android:layout_marginTop="5dp"
-	        android:text="@string/button_generate" />
-	</RelativeLayout>
-</ScrollView>
+	        android:text="@string/difficulty_2"
+	        android:textColor="#E3AD08" />
+	    <RadioButton
+	        android:id="@+id/difficulty_3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/difficulty_3"
+	        android:textColor="#719E03" />
+	    <RadioButton
+	        android:id="@+id/difficulty_4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/difficulty_4"
+	        android:textColor="#009000" />
+	</RadioGroup>
+    <View
+        android:layout_height="0dp"
+		android:layout_width="fill_parent"
+		android:layout_weight="1" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/swipe"
+	    android:gravity="center_horizontal"
+		android:layout_marginTop="15dp"
+		android:padding="5dp"
+		android:layout_weight="0" />
+</LinearLayout>

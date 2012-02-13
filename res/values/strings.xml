@@ -12,7 +12,7 @@
     <string name="checkbox_numbers">Numerals</string>
     <string name="checkbox_lower">Lowercase letters</string>
     <string name="checkbox_upper">Uppercase letters</string>
-    <string name="app_title">Password generator</string>
+    <string name="app_title">Password Generator</string>
     <string name="menu_simple">Simple</string>
     <string name="menu_advanced">Advanced</string>
     <string name="menu_about">About</string>
@@ -21,4 +21,6 @@
     <string name="difficulty_2">Normal</string>
     <string name="difficulty_3">Hard</string>
     <string name="difficulty_4">Very hard</string>
+    <string name="copy">Password copied to clipboard</string>
+    <string name="swipe">Swipe to the right for more options &#8594;</string>
 </resources>

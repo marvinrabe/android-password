@@ -9,71 +9,1067 @@ package de.echtzeitraum.openpassword;
 
 public final class R {
     public static final class attr {
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int abBackground=0x7f010020;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int abBackgroundStacked=0x7f010021;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int abCustomNavigationLayout=0x7f010022;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>useLogo</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>showHome</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>homeAsUp</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>showTitle</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
+</table>
+         */
+        public static final int abDisplayOptions=0x7f010018;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int abDivider=0x7f01001f;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int abHeight=0x7f010023;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int abHomeLayout=0x7f010024;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int abIcon=0x7f01001d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int abIndeterminateProgressStyle=0x7f010026;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int abItemPadding=0x7f010028;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int abLogo=0x7f01001e;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>listMode</code></td><td>1</td><td></td></tr>
+<tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int abNavigationMode=0x7f010017;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int abProgressBarPadding=0x7f010027;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int abProgressBarStyle=0x7f010025;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int abSubtitle=0x7f01001a;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int abSubtitleTextStyle=0x7f01001c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int abTitle=0x7f010019;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int abTitleTextStyle=0x7f01001b;
+        /** attr name="actionBarStyle" format="reference" /
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
+</table>
+         */
+        public static final int actionBarSize=0x7f010007;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTabBarStyle=0x7f010003;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTabStyle=0x7f010002;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTabTextStyle=0x7f010004;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionButtonStyle=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionDropDownStyle=0x7f010000;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionHomeButtonStyle=0x7f010006;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionMenuTextAppearance=0x7f010008;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int actionMenuTextColor=0x7f010009;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeBackground=0x7f01000b;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeCloseButtonStyle=0x7f01000a;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeCloseDrawable=0x7f01000c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionOverflowButtonStyle=0x7f010005;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionSpinnerItemStyle=0x7f010012;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dropDownListViewStyle=0x7f01000f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dropdownListPreferredItemHeight=0x7f010011;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int homeAsUpIndicator=0x7f01000d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int popupMenuStyle=0x7f010010;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int selectableItemBackground=0x7f01000e;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowActionBar=0x7f010014;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowActionBarOverlay=0x7f010015;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowActionModeOverlay=0x7f010016;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowNoTitle=0x7f010013;
+    }
+    public static final class bool {
+        /**  Whether action menu items should obey the "withText" showAsAction
+         flag. This may be set to false for situations where space is
+         extremely limited. 
+ Whether action menu items should obey the "withText" showAsAction
+         flag. This may be set to false for situations where space is
+         extremely limited. 
+         */
+        public static final int abs__config_allowActionMenuItemTextWithIcon=0x7f050000;
+    }
+    public static final class color {
+        public static final int abs__item_bg=0x7f060001;
+        public static final int abs__item_focused=0x7f060000;
+        public static final int abs__tab_text_color_dark=0x7f060002;
+        public static final int abs__tab_text_color_light=0x7f060003;
+    }
+    public static final class dimen {
+        /**  Default height of an action bar. 
+ Default height of an action bar. 
+ Default height of an action bar. 
+ Default height of an action bar. 
+ Default height of an action bar. 
+         */
+        public static final int abs__action_bar_default_height=0x7f090000;
     }
     public static final class drawable {
-        public static final int ic_menu_equalizer=0x7f020000;
-        public static final int ic_menu_info_details=0x7f020001;
-        public static final int icon=0x7f020002;
-        public static final int logo=0x7f020003;
+        public static final int abs__ab_stacked_transparent_dark_holo=0x7f020000;
+        public static final int abs__ab_stacked_transparent_light_holo=0x7f020001;
+        public static final int abs__action_item_divider=0x7f020002;
+        public static final int abs__cab_background_holo_dark=0x7f020003;
+        public static final int abs__cab_background_holo_light=0x7f020004;
+        public static final int abs__cab_ic_close_focused_holo=0x7f020005;
+        public static final int abs__cab_ic_close_holo=0x7f020006;
+        public static final int abs__cab_ic_close_normal_holo=0x7f020007;
+        public static final int abs__cab_ic_close_pressed_holo=0x7f020008;
+        public static final int abs__ic_ab_back_holo_dark=0x7f020009;
+        public static final int abs__ic_ab_back_holo_light=0x7f02000a;
+        public static final int abs__item_background_holo_dark=0x7f02000b;
+        public static final int abs__item_background_holo_light=0x7f02000c;
+        public static final int abs__list_focused_holo=0x7f02000d;
+        public static final int abs__list_longpressed_holo=0x7f02000e;
+        public static final int abs__list_pressed_holo_dark=0x7f02000f;
+        public static final int abs__list_pressed_holo_light=0x7f020010;
+        public static final int abs__list_selector_background_transition_holo_dark=0x7f020011;
+        public static final int abs__list_selector_background_transition_holo_light=0x7f020012;
+        public static final int abs__list_selector_disabled_holo_dark=0x7f020013;
+        public static final int abs__list_selector_disabled_holo_light=0x7f020014;
+        public static final int abs__spinner_background_holo_dark=0x7f020015;
+        public static final int abs__spinner_background_holo_light=0x7f020016;
+        public static final int abs__spinner_default_holo_dark=0x7f020017;
+        public static final int abs__spinner_default_holo_light=0x7f020018;
+        public static final int abs__spinner_disabled_holo_dark=0x7f020019;
+        public static final int abs__spinner_disabled_holo_light=0x7f02001a;
+        public static final int abs__spinner_focused_holo_dark=0x7f02001b;
+        public static final int abs__spinner_focused_holo_light=0x7f02001c;
+        public static final int abs__spinner_pressed_holo_dark=0x7f02001d;
+        public static final int abs__spinner_pressed_holo_light=0x7f02001e;
+        public static final int abs__tab_indicator_holo=0x7f02001f;
+        public static final int abs__tab_selected_focused_holo=0x7f020020;
+        public static final int abs__tab_selected_holo=0x7f020021;
+        public static final int abs__tab_selected_pressed_focused_holo=0x7f020022;
+        public static final int abs__tab_selected_pressed_holo=0x7f020023;
+        public static final int abs__tab_unselected_focused_holo=0x7f020024;
+        public static final int abs__tab_unselected_holo=0x7f020025;
+        public static final int abs__tab_unselected_pressed_focused_holo=0x7f020026;
+        public static final int abs__tab_unselected_pressed_holo=0x7f020027;
+        public static final int ic_menu_info_details=0x7f020028;
+        public static final int icon=0x7f020029;
     }
     public static final class id {
-        public static final int ScrollView=0x7f060000;
-        public static final int about=0x7f060019;
-        public static final int advanced=0x7f060018;
-        public static final int checkbox1=0x7f06000d;
-        public static final int checkbox2=0x7f06000e;
-        public static final int checkbox3=0x7f06000f;
-        public static final int checkbox4=0x7f060010;
-        public static final int difficulty_bar=0x7f060016;
-        public static final int difficulty_state=0x7f060017;
-        public static final int exclude=0x7f060013;
-        public static final int exclude_label=0x7f060012;
-        public static final int include=0x7f060011;
-        public static final int include_label=0x7f06000c;
-        public static final int label_difficulty=0x7f060015;
-        public static final int length=0x7f06000b;
-        public static final int length_label=0x7f06000a;
-        public static final int logo=0x7f060001;
-        public static final int ok=0x7f060014;
-        public static final int password=0x7f060008;
-        public static final int password_label=0x7f060007;
-        public static final int table=0x7f060009;
-        public static final int textView1=0x7f060002;
-        public static final int textView2=0x7f060003;
-        public static final int textView3=0x7f060004;
-        public static final int textView4=0x7f060005;
-        public static final int textView5=0x7f060006;
+        public static final int ScrollView=0x7f04000a;
+        public static final int about=0x7f040039;
+        public static final int abs__action_bar=0x7f040022;
+        public static final int abs__action_bar_container=0x7f040021;
+        public static final int abs__action_bar_subtitle=0x7f04001e;
+        public static final int abs__action_bar_title=0x7f04001d;
+        public static final int abs__action_menu_presenter=0x7f040009;
+        public static final int abs__actions=0x7f040012;
+        public static final int abs__content=0x7f040023;
+        public static final int abs__custom=0x7f040015;
+        public static final int abs__home=0x7f040018;
+        public static final int abs__home_wrapper=0x7f040011;
+        public static final int abs__imageButton=0x7f04001f;
+        public static final int abs__iprogress=0x7f040013;
+        public static final int abs__nav_list=0x7f040014;
+        public static final int abs__nav_tabs=0x7f040016;
+        public static final int abs__nav_tabs_layout=0x7f040019;
+        public static final int abs__tab=0x7f04001b;
+        public static final int abs__tab_custom=0x7f04001c;
+        public static final int abs__tab_icon=0x7f04001a;
+        public static final int abs__textButton=0x7f040020;
+        public static final int abs__up=0x7f040017;
+        public static final int checkbox1=0x7f040028;
+        public static final int checkbox2=0x7f040029;
+        public static final int checkbox3=0x7f04002a;
+        public static final int checkbox4=0x7f04002b;
+        public static final int difficulty=0x7f040033;
+        public static final int difficulty_0=0x7f040034;
+        public static final int difficulty_1=0x7f040035;
+        public static final int difficulty_2=0x7f040036;
+        public static final int difficulty_3=0x7f040037;
+        public static final int difficulty_4=0x7f040038;
+        public static final int exclude=0x7f04002e;
+        public static final int exclude_label=0x7f04002d;
+        public static final int homeAsUp=0x7f040006;
+        public static final int include=0x7f04002c;
+        public static final int include_label=0x7f040027;
+        public static final int label_difficulty=0x7f040032;
+        public static final int length=0x7f040026;
+        public static final int length_label=0x7f040025;
+        public static final int listMode=0x7f040002;
+        public static final int logo=0x7f04000b;
+        public static final int normal=0x7f040001;
+        public static final int ok=0x7f040031;
+        public static final int pager=0x7f040030;
+        public static final int password=0x7f04002f;
+        public static final int showCustom=0x7f040008;
+        public static final int showHome=0x7f040005;
+        public static final int showTitle=0x7f040007;
+        public static final int tabMode=0x7f040003;
+        public static final int table=0x7f040024;
+        public static final int textView1=0x7f04000c;
+        public static final int textView2=0x7f04000d;
+        public static final int textView3=0x7f04000e;
+        public static final int textView4=0x7f04000f;
+        public static final int textView5=0x7f040010;
+        public static final int useLogo=0x7f040004;
+        public static final int wrap_content=0x7f040000;
+    }
+    public static final class integer {
+        public static final int abs__max_action_buttons=0x7f070000;
     }
     public static final class layout {
         public static final int about=0x7f030000;
-        public static final int advanced=0x7f030001;
-        public static final int simple=0x7f030002;
+        public static final int abs__action_bar=0x7f030001;
+        public static final int abs__action_bar_home=0x7f030002;
+        public static final int abs__action_bar_inline=0x7f030003;
+        public static final int abs__action_bar_tab_layout=0x7f030004;
+        public static final int abs__action_bar_title_item=0x7f030005;
+        public static final int abs__action_menu_item_layout=0x7f030006;
+        public static final int abs__action_menu_layout=0x7f030007;
+        public static final int abs__screen_action_bar=0x7f030008;
+        public static final int abs__screen_action_bar_overlay=0x7f030009;
+        public static final int abs__screen_simple=0x7f03000a;
+        public static final int abs__simple_spinner_item=0x7f03000b;
+        public static final int advanced=0x7f03000c;
+        public static final int main=0x7f03000d;
+        public static final int simple=0x7f03000e;
     }
     public static final class menu {
-        public static final int advanced=0x7f050000;
-        public static final int simple=0x7f050001;
+        public static final int menu=0x7f0b0000;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int app_title=0x7f04000c;
-        public static final int button_generate=0x7f040006;
-        public static final int button_generate_widget=0x7f040007;
-        public static final int checkbox_lower=0x7f04000a;
-        public static final int checkbox_numbers=0x7f040009;
-        public static final int checkbox_symbols=0x7f040008;
-        public static final int checkbox_upper=0x7f04000b;
-        public static final int difficulty_0=0x7f040010;
-        public static final int difficulty_1=0x7f040011;
-        public static final int difficulty_2=0x7f040012;
-        public static final int difficulty_3=0x7f040013;
-        public static final int difficulty_4=0x7f040014;
-        public static final int label_difficulty=0x7f040005;
-        public static final int label_exclude=0x7f040004;
-        public static final int label_include=0x7f040003;
-        public static final int label_length=0x7f040002;
-        public static final int label_password=0x7f040001;
-        public static final int menu_about=0x7f04000f;
-        public static final int menu_advanced=0x7f04000e;
-        public static final int menu_simple=0x7f04000d;
+        public static final int abs__tab_under_ab_tag=0x7f080000;
+        public static final int app_name=0x7f080001;
+        public static final int app_title=0x7f08000d;
+        public static final int button_generate=0x7f080007;
+        public static final int button_generate_widget=0x7f080008;
+        public static final int checkbox_lower=0x7f08000b;
+        public static final int checkbox_numbers=0x7f08000a;
+        public static final int checkbox_symbols=0x7f080009;
+        public static final int checkbox_upper=0x7f08000c;
+        public static final int copy=0x7f080016;
+        public static final int difficulty_0=0x7f080011;
+        public static final int difficulty_1=0x7f080012;
+        public static final int difficulty_2=0x7f080013;
+        public static final int difficulty_3=0x7f080014;
+        public static final int difficulty_4=0x7f080015;
+        public static final int label_difficulty=0x7f080006;
+        public static final int label_exclude=0x7f080005;
+        public static final int label_include=0x7f080004;
+        public static final int label_length=0x7f080003;
+        public static final int label_password=0x7f080002;
+        public static final int menu_about=0x7f080010;
+        public static final int menu_advanced=0x7f08000f;
+        public static final int menu_simple=0x7f08000e;
+        public static final int swipe=0x7f080017;
     }
+    public static final class style {
+        public static final int Internal_Widget_Sherlock_ActionBar=0x7f0a001c;
+        public static final int Internal_Widget_Sherlock_Light_ActionBar=0x7f0a001d;
+        public static final int TextAppearance_Widget_Subtitle=0x7f0a001b;
+        public static final int TextAppearance_Widget_Title=0x7f0a001a;
+        public static final int Theme_Sherlock=0x7f0a0000;
+        public static final int Theme_Sherlock_Light=0x7f0a000d;
+        public static final int Widget_Sherlock_ActionBar_TabBar=0x7f0a0001;
+        public static final int Widget_Sherlock_ActionBar_TabText=0x7f0a0003;
+        public static final int Widget_Sherlock_ActionBar_TabView=0x7f0a0002;
+        public static final int Widget_Sherlock_ActionButton=0x7f0a0004;
+        public static final int Widget_Sherlock_ActionButton_CloseMode=0x7f0a0006;
+        public static final int Widget_Sherlock_ActionButton_Home=0x7f0a0007;
+        public static final int Widget_Sherlock_ActionButton_Overflow=0x7f0a0008;
+        public static final int Widget_Sherlock_Light_ActionBar_TabBar=0x7f0a000e;
+        public static final int Widget_Sherlock_Light_ActionBar_TabText=0x7f0a0010;
+        public static final int Widget_Sherlock_Light_ActionBar_TabView=0x7f0a000f;
+        public static final int Widget_Sherlock_Light_ActionButton=0x7f0a0011;
+        public static final int Widget_Sherlock_Light_ActionButton_CloseMode=0x7f0a0016;
+        public static final int Widget_Sherlock_Light_ActionButton_Home=0x7f0a0012;
+        public static final int Widget_Sherlock_Light_ActionButton_Overflow=0x7f0a0013;
+        public static final int Widget_Sherlock_Light_ListPopupWindow=0x7f0a0018;
+        public static final int Widget_Sherlock_Light_ListView_DropDown=0x7f0a0017;
+        public static final int Widget_Sherlock_Light_PopupMenu=0x7f0a0019;
+        public static final int Widget_Sherlock_Light_Spinner=0x7f0a0015;
+        public static final int Widget_Sherlock_Light_TextView_SpinnerItem_ActionBar=0x7f0a0014;
+        public static final int Widget_Sherlock_ListPopupWindow=0x7f0a000a;
+        public static final int Widget_Sherlock_ListView_DropDown=0x7f0a000b;
+        public static final int Widget_Sherlock_PopupMenu=0x7f0a000c;
+        public static final int Widget_Sherlock_Spinner=0x7f0a0005;
+        public static final int Widget_Sherlock_TextView_SpinnerItem_ActionBar=0x7f0a0009;
+    }
+    public static final class styleable {
+        /** Attributes that can be used with a SherlockTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockTheme_abBackground de.echtzeitraum.openpassword:abBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abBackgroundStacked de.echtzeitraum.openpassword:abBackgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abCustomNavigationLayout de.echtzeitraum.openpassword:abCustomNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abDisplayOptions de.echtzeitraum.openpassword:abDisplayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abDivider de.echtzeitraum.openpassword:abDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abHeight de.echtzeitraum.openpassword:abHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abHomeLayout de.echtzeitraum.openpassword:abHomeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abIcon de.echtzeitraum.openpassword:abIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abIndeterminateProgressStyle de.echtzeitraum.openpassword:abIndeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abItemPadding de.echtzeitraum.openpassword:abItemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abLogo de.echtzeitraum.openpassword:abLogo}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abNavigationMode de.echtzeitraum.openpassword:abNavigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abProgressBarPadding de.echtzeitraum.openpassword:abProgressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abProgressBarStyle de.echtzeitraum.openpassword:abProgressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abSubtitle de.echtzeitraum.openpassword:abSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abSubtitleTextStyle de.echtzeitraum.openpassword:abSubtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abTitle de.echtzeitraum.openpassword:abTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_abTitleTextStyle de.echtzeitraum.openpassword:abTitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarSize de.echtzeitraum.openpassword:actionBarSize}</code></td><td>attr name="actionBarStyle" format="reference" /</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabBarStyle de.echtzeitraum.openpassword:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabStyle de.echtzeitraum.openpassword:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabTextStyle de.echtzeitraum.openpassword:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionButtonStyle de.echtzeitraum.openpassword:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionDropDownStyle de.echtzeitraum.openpassword:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionHomeButtonStyle de.echtzeitraum.openpassword:actionHomeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionMenuTextAppearance de.echtzeitraum.openpassword:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionMenuTextColor de.echtzeitraum.openpassword:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeBackground de.echtzeitraum.openpassword:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeCloseButtonStyle de.echtzeitraum.openpassword:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeCloseDrawable de.echtzeitraum.openpassword:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionOverflowButtonStyle de.echtzeitraum.openpassword:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionSpinnerItemStyle de.echtzeitraum.openpassword:actionSpinnerItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropDownListViewStyle de.echtzeitraum.openpassword:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropdownListPreferredItemHeight de.echtzeitraum.openpassword:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_homeAsUpIndicator de.echtzeitraum.openpassword:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_popupMenuStyle de.echtzeitraum.openpassword:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_selectableItemBackground de.echtzeitraum.openpassword:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionBar de.echtzeitraum.openpassword:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionBarOverlay de.echtzeitraum.openpassword:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionModeOverlay de.echtzeitraum.openpassword:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowNoTitle de.echtzeitraum.openpassword:windowNoTitle}</code></td><td></td></tr>
+           </table>
+           @see #SherlockTheme_abBackground
+           @see #SherlockTheme_abBackgroundStacked
+           @see #SherlockTheme_abCustomNavigationLayout
+           @see #SherlockTheme_abDisplayOptions
+           @see #SherlockTheme_abDivider
+           @see #SherlockTheme_abHeight
+           @see #SherlockTheme_abHomeLayout
+           @see #SherlockTheme_abIcon
+           @see #SherlockTheme_abIndeterminateProgressStyle
+           @see #SherlockTheme_abItemPadding
+           @see #SherlockTheme_abLogo
+           @see #SherlockTheme_abNavigationMode
+           @see #SherlockTheme_abProgressBarPadding
+           @see #SherlockTheme_abProgressBarStyle
+           @see #SherlockTheme_abSubtitle
+           @see #SherlockTheme_abSubtitleTextStyle
+           @see #SherlockTheme_abTitle
+           @see #SherlockTheme_abTitleTextStyle
+           @see #SherlockTheme_actionBarSize
+           @see #SherlockTheme_actionBarTabBarStyle
+           @see #SherlockTheme_actionBarTabStyle
+           @see #SherlockTheme_actionBarTabTextStyle
+           @see #SherlockTheme_actionButtonStyle
+           @see #SherlockTheme_actionDropDownStyle
+           @see #SherlockTheme_actionHomeButtonStyle
+           @see #SherlockTheme_actionMenuTextAppearance
+           @see #SherlockTheme_actionMenuTextColor
+           @see #SherlockTheme_actionModeBackground
+           @see #SherlockTheme_actionModeCloseButtonStyle
+           @see #SherlockTheme_actionModeCloseDrawable
+           @see #SherlockTheme_actionOverflowButtonStyle
+           @see #SherlockTheme_actionSpinnerItemStyle
+           @see #SherlockTheme_dropDownListViewStyle
+           @see #SherlockTheme_dropdownListPreferredItemHeight
+           @see #SherlockTheme_homeAsUpIndicator
+           @see #SherlockTheme_popupMenuStyle
+           @see #SherlockTheme_selectableItemBackground
+           @see #SherlockTheme_windowActionBar
+           @see #SherlockTheme_windowActionBarOverlay
+           @see #SherlockTheme_windowActionModeOverlay
+           @see #SherlockTheme_windowNoTitle
+         */
+        public static final int[] SherlockTheme = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013,
+            0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017,
+            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b,
+            0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f,
+            0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023,
+            0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027,
+            0x7f010028
+        };
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abBackground}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name android:abBackground
+        */
+        public static final int SherlockTheme_abBackground = 32;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abBackgroundStacked}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name android:abBackgroundStacked
+        */
+        public static final int SherlockTheme_abBackgroundStacked = 33;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abCustomNavigationLayout}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:abCustomNavigationLayout
+        */
+        public static final int SherlockTheme_abCustomNavigationLayout = 34;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abDisplayOptions}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>useLogo</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>showHome</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>homeAsUp</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>showTitle</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
+</table>
+          @attr name android:abDisplayOptions
+        */
+        public static final int SherlockTheme_abDisplayOptions = 24;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abDivider}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name android:abDivider
+        */
+        public static final int SherlockTheme_abDivider = 31;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abHeight}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name android:abHeight
+        */
+        public static final int SherlockTheme_abHeight = 35;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abHomeLayout}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:abHomeLayout
+        */
+        public static final int SherlockTheme_abHomeLayout = 36;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abIcon}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:abIcon
+        */
+        public static final int SherlockTheme_abIcon = 29;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abIndeterminateProgressStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:abIndeterminateProgressStyle
+        */
+        public static final int SherlockTheme_abIndeterminateProgressStyle = 38;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abItemPadding}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:abItemPadding
+        */
+        public static final int SherlockTheme_abItemPadding = 40;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abLogo}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:abLogo
+        */
+        public static final int SherlockTheme_abLogo = 30;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abNavigationMode}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>listMode</code></td><td>1</td><td></td></tr>
+<tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name android:abNavigationMode
+        */
+        public static final int SherlockTheme_abNavigationMode = 23;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abProgressBarPadding}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:abProgressBarPadding
+        */
+        public static final int SherlockTheme_abProgressBarPadding = 39;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abProgressBarStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:abProgressBarStyle
+        */
+        public static final int SherlockTheme_abProgressBarStyle = 37;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abSubtitle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:abSubtitle
+        */
+        public static final int SherlockTheme_abSubtitle = 26;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abSubtitleTextStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:abSubtitleTextStyle
+        */
+        public static final int SherlockTheme_abSubtitleTextStyle = 28;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abTitle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:abTitle
+        */
+        public static final int SherlockTheme_abTitle = 25;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#abTitleTextStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:abTitleTextStyle
+        */
+        public static final int SherlockTheme_abTitleTextStyle = 27;
+        /**
+          <p>
+          @attr description
+          attr name="actionBarStyle" format="reference" /
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:actionBarSize
+        */
+        public static final int SherlockTheme_actionBarSize = 7;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionBarTabBarStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionBarTabBarStyle
+        */
+        public static final int SherlockTheme_actionBarTabBarStyle = 3;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionBarTabStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionBarTabStyle
+        */
+        public static final int SherlockTheme_actionBarTabStyle = 2;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionBarTabTextStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionBarTabTextStyle
+        */
+        public static final int SherlockTheme_actionBarTabTextStyle = 4;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionButtonStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionButtonStyle
+        */
+        public static final int SherlockTheme_actionButtonStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionDropDownStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionDropDownStyle
+        */
+        public static final int SherlockTheme_actionDropDownStyle = 0;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionHomeButtonStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionHomeButtonStyle
+        */
+        public static final int SherlockTheme_actionHomeButtonStyle = 6;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionMenuTextAppearance}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionMenuTextAppearance
+        */
+        public static final int SherlockTheme_actionMenuTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionMenuTextColor}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name android:actionMenuTextColor
+        */
+        public static final int SherlockTheme_actionMenuTextColor = 9;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionModeBackground}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionModeBackground
+        */
+        public static final int SherlockTheme_actionModeBackground = 11;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionModeCloseButtonStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionModeCloseButtonStyle
+        */
+        public static final int SherlockTheme_actionModeCloseButtonStyle = 10;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionModeCloseDrawable}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionModeCloseDrawable
+        */
+        public static final int SherlockTheme_actionModeCloseDrawable = 12;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionOverflowButtonStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionOverflowButtonStyle
+        */
+        public static final int SherlockTheme_actionOverflowButtonStyle = 5;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#actionSpinnerItemStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:actionSpinnerItemStyle
+        */
+        public static final int SherlockTheme_actionSpinnerItemStyle = 18;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#dropDownListViewStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:dropDownListViewStyle
+        */
+        public static final int SherlockTheme_dropDownListViewStyle = 15;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#dropdownListPreferredItemHeight}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:dropdownListPreferredItemHeight
+        */
+        public static final int SherlockTheme_dropdownListPreferredItemHeight = 17;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#homeAsUpIndicator}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:homeAsUpIndicator
+        */
+        public static final int SherlockTheme_homeAsUpIndicator = 13;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#popupMenuStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:popupMenuStyle
+        */
+        public static final int SherlockTheme_popupMenuStyle = 16;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#selectableItemBackground}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:selectableItemBackground
+        */
+        public static final int SherlockTheme_selectableItemBackground = 14;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#windowActionBar}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:windowActionBar
+        */
+        public static final int SherlockTheme_windowActionBar = 20;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#windowActionBarOverlay}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:windowActionBarOverlay
+        */
+        public static final int SherlockTheme_windowActionBarOverlay = 21;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#windowActionModeOverlay}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:windowActionModeOverlay
+        */
+        public static final int SherlockTheme_windowActionModeOverlay = 22;
+        /**
+          <p>This symbol is the offset where the {@link de.echtzeitraum.openpassword.R.attr#windowNoTitle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:windowNoTitle
+        */
+        public static final int SherlockTheme_windowNoTitle = 19;
+    };
 }

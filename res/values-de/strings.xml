@@ -21,4 +21,6 @@
     <string name="difficulty_2">Normal</string>
     <string name="difficulty_3">Stark</string>
     <string name="difficulty_4">Sehr stark</string>
+    <string name="copy">Passwort wurde kopiert</string>
+    <string name="swipe">Nach rechts wischen für mehr Optionen &#8594;</string>
 </resources>

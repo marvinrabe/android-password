@@ -3,7 +3,7 @@ package de.echtzeitraum.openpassword;
 import java.util.Arrays;
 
 /**
- * Generates password.
+ * Generates passwords.
  * @author Marvin Thomas Rabe <m.rabe@echtzeitraum.de>
  * @license GNU General Public License 3 <http://www.gnu.org/licenses/>
  */

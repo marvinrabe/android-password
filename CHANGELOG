@@ -1,3 +1,11 @@
+2012-02-14  Marvin Thomas Rabe  <m.rabe@echtzeitraum.de>
+
+* Updated UI to look great on Honeycomb/ICS devices.
+* Added actionbar sherlock.
+* Long press on password will copy it automatically to clipboard.
+* Added new way to switch between simple and advanced mode.
+* Installation on SD-Card is now allowed.
+
 2011-05-11  Marvin Thomas Rabe  <m.rabe@echtzeitraum.de>
 
 * Initial release.
