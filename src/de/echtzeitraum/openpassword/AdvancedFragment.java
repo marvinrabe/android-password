@@ -119,13 +119,16 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 	 * Apply control states.
 	 */
 	public void applyControls() {
-		int length = new Integer(this.edit_length.getText().toString());
-		if(length < 0) {
-			length = 0;
-			this.edit_length.setText("0");
-		} else if (length > 5120) {
-			length = 5120;
-			this.edit_length.setText("5120");
+		int length = 0;
+		if(!this.edit_length.getText().equals("")) {
+			length = new Integer(this.edit_length.getText().toString());
+			if(length < 0) {
+				length = 0;
+				this.edit_length.setText("0");
+			} else if (length > 5120) {
+				length = 5120;
+				this.edit_length.setText("5120");
+			}
 		}
 		MainView.generator.setLength((int) length);
 		MainView.generator.setUpperChars(this.edit_upper.isChecked());
@@ -141,12 +144,14 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 	 */
 	public void saveControls() {
 		SharedPreferences.Editor editor = MainView.settings.edit();
-	
-		int length = new Integer(this.edit_length.getText().toString());
-		if(length < 0) {
-			length = 0;
-		} else if (length > 5120) {
-			length = 5120;
+		int length = 0;
+		if(!this.edit_length.getText().equals("")) {
+			length = new Integer(this.edit_length.getText().toString());
+			if(length < 0) {
+				length = 0;
+			} else if (length > 5120) {
+				length = 5120;
+			}
 		}
 		editor.putInt("length", (int) length);
 		editor.putBoolean("upper", this.edit_upper.isChecked());
