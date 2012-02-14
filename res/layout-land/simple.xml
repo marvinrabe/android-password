@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+   <LinearLayout android:id="@+id/table"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+    <TextView
+       	android:id="@+id/label_difficulty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:text="@string/label_difficulty"/>
+    <RadioGroup
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/difficulty">
+	    <RadioButton
+	        android:id="@+id/difficulty_0"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/difficulty_0"
+	        android:textColor="#900000" />
+	    <RadioButton
+	        android:id="@+id/difficulty_1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/difficulty_1"
+	        android:textColor="#B95603" />
+	    <RadioButton
+	        android:id="@+id/difficulty_2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/difficulty_2"
+	        android:textColor="#E3AD08" />
+	    <RadioButton
+	        android:id="@+id/difficulty_3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/difficulty_3"
+	        android:textColor="#719E03" />
+	    <RadioButton
+	        android:id="@+id/difficulty_4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/difficulty_4"
+	        android:textColor="#009000" />
+	</RadioGroup>
+	</LinearLayout>
+</ScrollView>
