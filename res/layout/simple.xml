@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-   <LinearLayout android:id="@+id/table"
+<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
-    android:orientation="vertical"
+    android:orientation="vertical">
+<ScrollView android:id="@+id/ScrollView"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
     android:paddingLeft="20dp"
     android:paddingRight="20dp">
+   <LinearLayout android:id="@+id/table"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
     <TextView
        	android:id="@+id/label_difficulty"
         android:layout_width="fill_parent"
@@ -47,10 +56,8 @@
 	        android:text="@string/difficulty_4"
 	        android:textColor="#009000" />
 	</RadioGroup>
-    <View
-        android:layout_height="0dp"
-		android:layout_width="fill_parent"
-		android:layout_weight="1" />
+	</LinearLayout>
+</ScrollView>
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -59,4 +66,4 @@
 		android:layout_marginTop="15dp"
 		android:padding="5dp"
 		android:layout_weight="0" />
-</LinearLayout>
+	</LinearLayout>
