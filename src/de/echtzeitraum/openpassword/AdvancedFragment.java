@@ -120,7 +120,7 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 	 */
 	public void applyControls() {
 		int length = 0;
-		if(!this.edit_length.getText().equals("")) {
+		if(!this.edit_length.getText().toString().equals("")) {
 			length = new Integer(this.edit_length.getText().toString());
 			if(length < 0) {
 				length = 0;
@@ -129,6 +129,8 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 				length = 5120;
 				this.edit_length.setText("5120");
 			}
+		} else {
+			this.edit_length.setText("0");
 		}
 		MainView.generator.setLength((int) length);
 		MainView.generator.setUpperChars(this.edit_upper.isChecked());
@@ -145,7 +147,7 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 	public void saveControls() {
 		SharedPreferences.Editor editor = MainView.settings.edit();
 		int length = 0;
-		if(!this.edit_length.getText().equals("")) {
+		if(!this.edit_length.getText().toString().equals("")) {
 			length = new Integer(this.edit_length.getText().toString());
 			if(length < 0) {
 				length = 0;
