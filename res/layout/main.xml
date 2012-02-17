@@ -10,7 +10,7 @@
         android:singleLine="true"
         android:editable="false"
 	    android:layout_weight="0"
-	    android:layout_marginBottom="10dp" />
+	    android:layout_margin="5dp" />
 	<android.support.v4.view.ViewPager
 	    android:id="@+id/pager"
 	    android:layout_width="fill_parent"
@@ -21,6 +21,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_generate"
-	    android:layout_margin="10dp"
+	    android:layout_margin="5dp"
 	    android:layout_weight="0" />
 </LinearLayout>

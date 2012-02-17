@@ -76,13 +76,13 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 				public void handleMessage(Message msg) {
 					dialog.dismiss();
 					button.setEnabled(true);
-					pwField.setText(MainView.password);
+					pwField.setText(msg.getData().getString("password"));
 	
 					/* Checks if easter egg was found*/
 					if(isEasterEgg()) {
 						/* Easter egg found */
 						Toast.makeText(getActivity().getApplicationContext(), "Easter Egg!", Toast.LENGTH_SHORT).show();
-						getView().findViewById(R.id.ScrollView).setBackgroundColor((int) Long.parseLong("FF"+MainView.password,16)); // changes background color
+						getView().findViewById(R.id.ScrollView).setBackgroundColor((int) Long.parseLong("FF"+msg.getData().getString("password"),16)); // changes background color
 					} else {
 						/* Reset controls if easter egg was found */
 						getView().findViewById(R.id.ScrollView).setBackgroundColor(android.R.color.transparent);
@@ -96,8 +96,11 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 			/* Start new thread for generating the password */
 			new Thread(new Runnable() {
 				public void run() {
-					MainView.password = MainView.generator.getPassword();
-					handler.sendEmptyMessage(0);
+					Bundle data = new Bundle();
+					data.putString("password", MainView.generator.getPassword());
+					Message msg = new Message();
+					msg.setData(data);
+					handler.sendMessage(msg);
 				}
 			}).start();
 		} else {

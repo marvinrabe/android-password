@@ -30,7 +30,6 @@ public class MainView extends FragmentActivity {
 
 	public static Generator generator = null;
 	public static SharedPreferences settings = null;
-	public static String password = "";
 
 	public ViewPager mPager;
 	public ModeAdapter mAdapter;
@@ -120,7 +119,8 @@ public class MainView extends FragmentActivity {
     
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-    	savedInstanceState.putString("password", MainView.password);
+		final EditText pwField = (EditText) findViewById(R.id.password);
+    	savedInstanceState.putString("password", pwField.getText().toString());
     	getSupportFragmentManager().putFragment(savedInstanceState, SimpleFragment.class.getName(), fSimple);
     	getSupportFragmentManager().putFragment(savedInstanceState, AdvancedFragment.class.getName(), fAdvanced);
     	super.onSaveInstanceState(savedInstanceState);
@@ -129,14 +129,14 @@ public class MainView extends FragmentActivity {
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
     	super.onRestoreInstanceState(savedInstanceState);
-    	MainView.password = savedInstanceState.getString("password");
 		final EditText pwField = (EditText) findViewById(R.id.password);
-		pwField.setText(MainView.password);
+		pwField.setText(savedInstanceState.getString("password"));
     }
 
 	/**
 	 * Creates options menu.
 	 */
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    MenuInflater inflater = getMenuInflater();
 	    inflater.inflate(R.menu.menu, menu);

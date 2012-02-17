@@ -137,8 +137,9 @@ public class Generator {
 			}
 
 			String pw = new String();
+			String newChar;
 			for (int i=0; i < Generator.passwordLength; i++) {
-				String newChar = Generator.charArray[ (int) (Math.random() * Generator.charArray.length) ];
+				newChar = Generator.charArray[ (int) (Math.random() * Generator.charArray.length) ];
 				if(Generator.charExcludeArray != null) {
 					if(Arrays.asList(Generator.charExcludeArray).contains(newChar)) {
 						if(tryNumber > maxTries) {

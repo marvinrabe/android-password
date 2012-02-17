@@ -43,15 +43,18 @@ public class SimpleFragment extends Fragment implements FragmentForms {
    		/* Handler; updates view after password was generated */
 		final Handler handler = new Handler() {
 			public void handleMessage(Message msg) {
-				pwField.setText(MainView.password);
+				pwField.setText(msg.getData().getString("password"));
 			}
 		};
 
 		/* Start new thread for generating the password */
 		new Thread(new Runnable() {
 			public void run() {
-				MainView.password = MainView.generator.getPassword();
-				handler.sendEmptyMessage(0);
+				Bundle data = new Bundle();
+				data.putString("password", MainView.generator.getPassword());
+				Message msg = new Message();
+				msg.setData(data);
+				handler.sendMessage(msg);
 			}
 		}).start();
 	}
