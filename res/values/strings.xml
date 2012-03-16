@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Password</string>
-    <string name="label_password">Password:</string>
-    <string name="label_length">Length:</string>
-    <string name="label_include">Include:</string>
-    <string name="label_exclude">Exclude:</string>
-    <string name="label_difficulty">Password strength:</string>
-    <string name="button_generate">Generate Password</string>
-    <string name="button_generate_widget">Generate</string>
-    <string name="checkbox_symbols">Symbols</string>
-    <string name="checkbox_numbers">Numerals</string>
-    <string name="checkbox_lower">Lowercase letters</string>
-    <string name="checkbox_upper">Uppercase letters</string>
-    <string name="app_title">Password Generator</string>
-    <string name="menu_about">About</string>
-    <string name="difficulty_0">Very weak</string>
-    <string name="difficulty_1">Weak</string>
-    <string name="difficulty_2">Normal</string>
-    <string name="difficulty_3">Hard</string>
-    <string name="difficulty_4">Very hard</string>
-    <string name="copy">Password copied to clipboard</string>
-    <string name="swipe">Swipe for more options &#8594;</string>
+	<string name="app_name">Password</string>
+	<string name="label_password">Password:</string>
+	<string name="label_length">Length:</string>
+	<string name="label_include">Include:</string>
+	<string name="label_exclude">Exclude:</string>
+	<string name="label_difficulty">Password strength:</string>
+	<string name="button_generate">Generate Password</string>
+	<string name="button_generate_widget">Generate</string>
+	<string name="checkbox_symbols">Symbols</string>
+	<string name="checkbox_numbers">Numerals</string>
+	<string name="checkbox_lower">Lowercase letters</string>
+	<string name="checkbox_upper">Uppercase letters</string>
+	<string name="app_title">Password Generator</string>
+	<string name="menu_about">About</string>
+	<string name="difficulty_0">Very weak</string>
+	<string name="difficulty_1">Weak</string>
+	<string name="difficulty_2">Normal</string>
+	<string name="difficulty_3">Hard</string>
+	<string name="difficulty_4">Very hard</string>
+	<string name="copy">Password copied to clipboard</string>
+	<string name="swipe">Swipe for more options &#8594;</string>
+	<string name="info_title">Password Generator created by</string>
+	<string name="info_license">Full source code is available on http://wiki.echtzeitraum.de/ . You can modify and redistribute it under the terms of the Apache License 2.0 .</string>
+	<string name="info_icons">"Shuffle" symbol from thenounproject.com collection.</string>
+
+	<string name="author">Marvin Thomas Rabe</string>
+	<string name="author_email">(mrabe@marvinrabe.de)</string>
 </resources>

@@ -71,6 +71,7 @@ public class SimpleFragment extends Fragment implements FragmentForms {
 	 * Apply control states.
 	 */
 	public void applyControls(int checkBoxId) {
+		MainView.generator.setLowerChars(true);
 		MainView.generator.setUpperChars(false);
 		MainView.generator.setNumbers(true);
 		MainView.generator.setPunctuation(false);
