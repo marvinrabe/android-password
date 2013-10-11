@@ -1,17 +1,19 @@
 package de.echtzeitraum.openpassword;
 
+import com.actionbarsherlock.app.SherlockFragment;
+
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 
-public class SimpleFragment extends Fragment implements FragmentForms {
+public class SimpleFragment extends SherlockFragment implements FragmentForms {
 
 	private RadioGroup difficultyState;
 	
@@ -38,16 +40,26 @@ public class SimpleFragment extends Fragment implements FragmentForms {
 	}
 
 	public void generatePassword () {
+		final EditText pwField = (EditText) getSherlockActivity().findViewById(R.id.password);
 		this.applyControls();
-		final EditText pwField = (EditText) getActivity().findViewById(R.id.password);;
-   		/* Handler; updates view after password was generated */
+
+		// Disable button and show progress icon
+		final Button button = (Button) getSherlockActivity().findViewById(R.id.ok);
+		button.setEnabled(false);
+		getSherlockActivity().setSupportProgressBarIndeterminateVisibility(true);
+
+   		// Handler; updates view after password was generated
 		final Handler handler = new Handler() {
 			public void handleMessage(Message msg) {
 				pwField.setText(msg.getData().getString("password"));
+
+				// Hide progress icon and enable button
+				getSherlockActivity().setSupportProgressBarIndeterminateVisibility(false);
+				button.setEnabled(true);
 			}
 		};
 
-		/* Start new thread for generating the password */
+		// Start new thread for generating the password
 		new Thread(new Runnable() {
 			public void run() {
 				Bundle data = new Bundle();
@@ -86,13 +98,13 @@ public class SimpleFragment extends Fragment implements FragmentForms {
 			break;
 		case 3:
 			// Hard
-			MainView.generator.setLength(8);
+			MainView.generator.setLength(12);
 			MainView.generator.setUpperChars(true);
 			MainView.generator.setNumbers(true);
 			break;
 		case 4:
 			// Very hard
-			MainView.generator.setLength(10);
+			MainView.generator.setLength(16);
 			MainView.generator.setUpperChars(true);
 			MainView.generator.setPunctuation(true);
 			break;

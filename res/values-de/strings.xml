@@ -22,6 +22,6 @@
 	<string name="copy">Passwort wurde kopiert</string>
 	<string name="swipe">Wischen für mehr Optionen &#8594;</string>
 	<string name="info_title">Passwort Generator wurde erstellt von</string>
-	<string name="info_license">Vollständiger Quellcode ist verfügbar auf http://wiki.echtzeitraum.de/ . Dieses Programm kann unter den Bedingungen der Apache 2.0 Lizenz verändert und weiter verbreitet werden.</string>
+	<string name="info_license">Vollständiger Quellcode ist verfügbar auf https://github.com/marvinrabe/android-password . Dieses Programm kann unter den Bedingungen der GNU GPL 3 Lizenz verändert und weiter verbreitet werden.</string>
 	<string name="info_icons">"Mischen" Symbol aus der thenounproject.com Sammlung.</string>
 </resources>

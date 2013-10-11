@@ -1,24 +1,20 @@
 package de.echtzeitraum.openpassword;
 
-import android.app.Activity;
-import android.app.ProgressDialog;
+import com.actionbarsherlock.app.SherlockFragment;
+
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.Fragment;
-import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class AdvancedFragment extends Fragment implements FragmentForms {
+public class AdvancedFragment extends SherlockFragment implements FragmentForms {
 
 	private EditText edit_length;
 	private CheckBox edit_upper;
@@ -50,46 +46,31 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 	}
 
 	public void generatePassword () {
-		final EditText pwField = (EditText) getActivity().findViewById(R.id.password);
+		final EditText pwField = (EditText) getSherlockActivity().findViewById(R.id.password);
 		this.applyControls();
 		if(MainView.generator.isOk()) {
-			/* Disable button */
-			final Button button = (Button) getActivity().findViewById(R.id.ok);
+			// Disable button and show progress icon
+			final Button button = (Button) getSherlockActivity().findViewById(R.id.ok);
 			button.setEnabled(false);
-
-			/* Disable screen rotation */
-            Display display = ((WindowManager) getActivity().getSystemService(Activity.WINDOW_SERVICE)).getDefaultDisplay();
-            if (display.getOrientation() == 0) {
-            	getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-            } else {
-            	getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-            }
-
-			/* Show progress dialog */
-			final ProgressDialog dialog = new ProgressDialog(getActivity());
-			dialog.setMessage("Generating...");
-			dialog.setCancelable(false);
-	   		dialog.show();
+			getSherlockActivity().setSupportProgressBarIndeterminateVisibility(true);
 	
 	   		/* Handler; updates view after password was generated */
 			final Handler handler = new Handler() {
 				public void handleMessage(Message msg) {
-					dialog.dismiss();
-					button.setEnabled(true);
 					pwField.setText(msg.getData().getString("password"));
-	
-					/* Checks if easter egg was found*/
+					
+					// Checks if easter egg was found
+					int color = getResources().getColor(android.R.color.transparent);
 					if(isEasterEgg()) {
-						/* Easter egg found */
-						Toast.makeText(getActivity().getApplicationContext(), "Easter Egg!", Toast.LENGTH_SHORT).show();
-						getView().findViewById(R.id.ScrollView).setBackgroundColor((int) Long.parseLong("FF"+msg.getData().getString("password"),16)); // changes background color
-					} else {
-						/* Reset controls if easter egg was found */
-						getView().findViewById(R.id.ScrollView).setBackgroundColor(android.R.color.transparent);
+						// Easter egg found
+						Toast.makeText(getSherlockActivity().getApplicationContext(), "Easter Egg!", Toast.LENGTH_SHORT).show();
+						color = (int) Long.parseLong("FF"+msg.getData().getString("password"),16); // changes background color
 					}
-
-					/* Enable screen rotation */
-					getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+					getView().findViewById(R.id.ScrollView).setBackgroundColor(color);
+					
+					// Hide progress icon and enable button
+					getSherlockActivity().setSupportProgressBarIndeterminateVisibility(false);
+					button.setEnabled(true);
 				}
 			};
 	
@@ -124,7 +105,7 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 	public void applyControls() {
 		int length = 0;
 		if(!this.edit_length.getText().toString().equals("")) {
-			length = new Integer(this.edit_length.getText().toString());
+			length = Integer.valueOf(this.edit_length.getText().toString());
 			if(length < 0) {
 				length = 0;
 				this.edit_length.setText("0");
@@ -151,7 +132,7 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 		SharedPreferences.Editor editor = MainView.settings.edit();
 		int length = 0;
 		if(!this.edit_length.getText().toString().equals("")) {
-			length = new Integer(this.edit_length.getText().toString());
+			length = Integer.valueOf(this.edit_length.getText().toString());
 			if(length < 0) {
 				length = 0;
 			} else if (length > 5120) {
@@ -172,7 +153,7 @@ public class AdvancedFragment extends Fragment implements FragmentForms {
 	 * Load preferences and set the controls.
 	 */
 	public void setControls() {	
-		this.edit_length.setText(new Integer(MainView.settings.getInt("length", 8)).toString());
+		this.edit_length.setText(Integer.valueOf(MainView.settings.getInt("length", 8)).toString());
 		this.edit_upper.setChecked(MainView.settings.getBoolean("upper", true));
 		this.edit_lower.setChecked(MainView.settings.getBoolean("lower", true));
 		this.edit_numbers.setChecked(MainView.settings.getBoolean("numbers", true));

@@ -7,13 +7,15 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.Menu;
-import android.support.v4.view.MenuItem;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuItem;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.Window;
+
 import android.support.v4.view.ViewPager;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
@@ -21,7 +23,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainView extends FragmentActivity {
+public class MainView extends SherlockFragmentActivity {
 	
 	/**
 	 * Name of shared preferences.
@@ -41,8 +43,14 @@ public class MainView extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-		/* Updates App title */
+		// Updates App title
 		this.setTitle(this.getResources().getString(R.string.app_title));
+		
+		// Enables progress icon if API level >= 11 */
+		if( android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB ) {
+			requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
+			setSupportProgressBarIndeterminateVisibility(false);
+		}
 		
 		MainView.generator = new Generator();
 		MainView.settings = getSharedPreferences(PREFS_NAME, 0);
@@ -83,7 +91,6 @@ public class MainView extends FragmentActivity {
 		pwField.setLongClickable(true);
 		pwField.setOnLongClickListener(new OnLongClickListener() {
 			@Override
-			@SuppressWarnings("deprecation")
 			public boolean onLongClick(View view) {
 				/* Copy text to clipboard manager */
 				/* Use new ClipboardManager if API level >= 11 */
@@ -136,9 +143,8 @@ public class MainView extends FragmentActivity {
 	/**
 	 * Creates options menu.
 	 */
-	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-	    MenuInflater inflater = getMenuInflater();
+	    MenuInflater inflater = getSupportMenuInflater();
 	    inflater.inflate(R.menu.menu, menu);
 	    return true;
 	}
@@ -146,7 +152,6 @@ public class MainView extends FragmentActivity {
 	/**
 	 * Action if option item was selected.
 	 */
-	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
 	    case R.id.about:

@@ -1,6 +1,6 @@
 h1. Password generator
 
-p. This is a password generator for android mobile phones. It is ad-free and licenced under a Apache-licence. In first case this generator is developed for educational purposes.
+p. This is a password generator for android mobile phones. It is ad-free and licenced under a GNU-license. In first case this generator is developed for educational purposes.
 
 h2. Features
 
@@ -17,8 +17,8 @@ h2. Requirements
 * Android mobile phone
 * Android >= 2.1
 
-p. If you want to compile it by hand then you need the whole Android SDK and Actionbar Sherlock 3.5.
+p. If you want to compile it by hand then you need the current Android SDK and ActionbarSherlock 4.4.0.
 
 h2. License
 
-p. You can modify and redistribute it under the terms of the Apache License 2.0. „Shuffle“ symbol from thenounproject.com collection.
+p. You can modify and redistribute it under the terms of the GNU GPL 3. „Shuffle“ symbol from thenounproject.com collection.

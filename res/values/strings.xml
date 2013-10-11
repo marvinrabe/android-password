@@ -22,9 +22,9 @@
 	<string name="copy">Password copied to clipboard</string>
 	<string name="swipe">Swipe for more options &#8594;</string>
 	<string name="info_title">Password Generator created by</string>
-	<string name="info_license">Full source code is available on http://wiki.echtzeitraum.de/ . You can modify and redistribute it under the terms of the Apache License 2.0 .</string>
+	<string name="info_license">Full source code is available on https://github.com/marvinrabe/android-password . You can modify and redistribute it under the terms of the GNU GPL 3 .</string>
 	<string name="info_icons">"Shuffle" symbol from thenounproject.com collection.</string>
 
-	<string name="author">Marvin Thomas Rabe</string>
-	<string name="author_email">(mrabe@marvinrabe.de)</string>
+	<string name="author">Marvin Rabe</string>
+	<string name="author_email">(me@marvinrabe.de)</string>
 </resources>
