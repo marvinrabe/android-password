@@ -5,6 +5,11 @@ import android.os.Bundle;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
 
+/**
+ * Displays meta information about the app.
+ * @author Marvin Rabe <me@marvinrabe.de>
+ * @license GNU General Public License 3 <http://www.gnu.org/licenses/>
+ */
 final public class AboutView extends SherlockFragmentActivity {
 
 	@Override
@@ -16,6 +21,7 @@ final public class AboutView extends SherlockFragmentActivity {
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
+    @Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
 	        case android.R.id.home:
