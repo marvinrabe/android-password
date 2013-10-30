@@ -1,4 +1,20 @@
+# Eclipse
+.classpath
+.project
+.settings/
+*.eml
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
 .DS_Store
+
+# Maven
+log/
+target/
 
 # built application files
 *.apk
@@ -17,6 +33,3 @@ gen/
 # Local configuration file (sdk path, etc)
 local.properties
 
-# Eclipse project files
-.classpath
-.project
