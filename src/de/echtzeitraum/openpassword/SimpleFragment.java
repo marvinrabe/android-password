@@ -63,7 +63,7 @@ public class SimpleFragment extends SherlockFragment implements FragmentForms {
 		new Thread(new Runnable() {
 			public void run() {
 				Bundle data = new Bundle();
-				data.putString("password", MainView.generator.getPassword());
+				data.putString("password", MainView.passwordGenerator.getPassword());
 				Message msg = new Message();
 				msg.setData(data);
 				handler.sendMessage(msg);
@@ -83,35 +83,35 @@ public class SimpleFragment extends SherlockFragment implements FragmentForms {
 	 * Apply control states.
 	 */
 	public void applyControls(int checkBoxId) {
-		MainView.generator.setLowerChars(true);
-		MainView.generator.setUpperChars(false);
-		MainView.generator.setNumbers(true);
-		MainView.generator.setPunctuation(false);
+		MainView.passwordGenerator.setLowerChars(true);
+		MainView.passwordGenerator.setUpperChars(false);
+		MainView.passwordGenerator.setNumbers(true);
+		MainView.passwordGenerator.setPunctuation(false);
 		switch (getCheckboxPosition(checkBoxId)) {
 		case 1:
 			// Easy
-			MainView.generator.setLength(7);
+			MainView.passwordGenerator.length = 7;
 			break;
 		case 2:
 			// Normal
-			MainView.generator.setLength(8);
+			MainView.passwordGenerator.length = 8;
 			break;
 		case 3:
 			// Hard
-			MainView.generator.setLength(12);
-			MainView.generator.setUpperChars(true);
-			MainView.generator.setNumbers(true);
+			MainView.passwordGenerator.length = 12;
+			MainView.passwordGenerator.setUpperChars(true);
+			MainView.passwordGenerator.setNumbers(true);
 			break;
 		case 4:
 			// Very hard
-			MainView.generator.setLength(16);
-			MainView.generator.setUpperChars(true);
-			MainView.generator.setPunctuation(true);
+			MainView.passwordGenerator.length = 16;
+			MainView.passwordGenerator.setUpperChars(true);
+			MainView.passwordGenerator.setPunctuation(true);
 			break;
 		default:
 			// Very easy
-			MainView.generator.setLength(6);
-			MainView.generator.setNumbers(false);
+			MainView.passwordGenerator.length = 6;
+			MainView.passwordGenerator.setNumbers(false);
 			break;
 		}
 	}

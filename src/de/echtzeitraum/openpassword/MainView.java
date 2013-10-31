@@ -2,7 +2,6 @@ package de.echtzeitraum.openpassword;
 
 import java.util.ArrayList;
 
-import de.echtzeitraum.openpassword.R;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -23,6 +22,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * Main activity of password generator app.
+ * @author Marvin Rabe <me@marvinrabe.de>
+ * @license GNU General Public License 3 <http://www.gnu.org/licenses/>
+ */
 public class MainView extends SherlockFragmentActivity {
 	
 	/**
@@ -30,7 +34,14 @@ public class MainView extends SherlockFragmentActivity {
 	 */
 	public final String PREFS_NAME = "PasswordGeneratorSettings";
 
-	public static Generator generator = null;
+    /**
+     * Instance of Password Generator
+     */
+	public static PasswordGenerator passwordGenerator = null;
+
+    /**
+     * Contain stored default values for the controls.
+     */
 	public static SharedPreferences settings = null;
 
 	public ViewPager mPager;
@@ -52,7 +63,7 @@ public class MainView extends SherlockFragmentActivity {
 			setSupportProgressBarIndeterminateVisibility(false);
 		}
 		
-		MainView.generator = new Generator();
+		MainView.passwordGenerator = new PasswordGenerator();
 		MainView.settings = getSharedPreferences(PREFS_NAME, 0);
 		
         setContentView(R.layout.main);
@@ -95,7 +106,7 @@ public class MainView extends SherlockFragmentActivity {
 				/* Copy text to clipboard manager */
 				/* Use new ClipboardManager if API level >= 11 */
 				if( android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB ) {
-					android.content.ClipboardManager clipboard = (android.content.ClipboardManager) getSystemService(CLIPBOARD_SERVICE); 
+					android.content.ClipboardManager clipboard = (android.content.ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
 					clipboard.setText(pwField.getText());
 				} else {
 					android.text.ClipboardManager clipboard = (android.text.ClipboardManager) getSystemService(CLIPBOARD_SERVICE);

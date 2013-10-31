@@ -28,8 +28,7 @@ public class AdvancedFragment extends SherlockFragment implements FragmentForms 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 	    if (container == null)
 	        return null;
-	    View v = inflater.inflate(R.layout.advanced, container, false);
-	    return v;
+	    return inflater.inflate(R.layout.advanced, container, false);
 	}
 	
 	@Override
@@ -48,7 +47,7 @@ public class AdvancedFragment extends SherlockFragment implements FragmentForms 
 	public void generatePassword () {
 		final EditText pwField = (EditText) getSherlockActivity().findViewById(R.id.password);
 		this.applyControls();
-		if(MainView.generator.isOk()) {
+		if(MainView.passwordGenerator.isOk()) {
 			// Disable button and show progress icon
 			final Button button = (Button) getSherlockActivity().findViewById(R.id.ok);
 			button.setEnabled(false);
@@ -78,7 +77,7 @@ public class AdvancedFragment extends SherlockFragment implements FragmentForms 
 			new Thread(new Runnable() {
 				public void run() {
 					Bundle data = new Bundle();
-					data.putString("password", MainView.generator.getPassword());
+					data.putString("password", MainView.passwordGenerator.getPassword());
 					Message msg = new Message();
 					msg.setData(data);
 					handler.sendMessage(msg);
@@ -116,13 +115,13 @@ public class AdvancedFragment extends SherlockFragment implements FragmentForms 
 		} else {
 			this.edit_length.setText("0");
 		}
-		MainView.generator.setLength((int) length);
-		MainView.generator.setUpperChars(this.edit_upper.isChecked());
-		MainView.generator.setLowerChars(this.edit_lower.isChecked());
-		MainView.generator.setNumbers(this.edit_numbers.isChecked());
-		MainView.generator.setPunctuation(this.edit_punctuation.isChecked());
-		MainView.generator.setInclude(this.edit_include.getText().toString());
-		MainView.generator.setExclude(this.edit_exclude.getText().toString());
+		MainView.passwordGenerator.length = length;
+		MainView.passwordGenerator.setUpperChars(this.edit_upper.isChecked());
+		MainView.passwordGenerator.setLowerChars(this.edit_lower.isChecked());
+		MainView.passwordGenerator.setNumbers(this.edit_numbers.isChecked());
+		MainView.passwordGenerator.setPunctuation(this.edit_punctuation.isChecked());
+		MainView.passwordGenerator.setInclude(this.edit_include.getText().toString());
+		MainView.passwordGenerator.setExclude(this.edit_exclude.getText().toString());
 	}
 
 	/**
@@ -139,7 +138,7 @@ public class AdvancedFragment extends SherlockFragment implements FragmentForms 
 				length = 5120;
 			}
 		}
-		editor.putInt("length", (int) length);
+		editor.putInt("length", length);
 		editor.putBoolean("upper", this.edit_upper.isChecked());
 		editor.putBoolean("lower", this.edit_lower.isChecked());
 		editor.putBoolean("numbers", this.edit_numbers.isChecked());
