@@ -165,11 +165,14 @@ public class MainView extends SherlockFragmentActivity {
 	 */
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
-	    case R.id.about:
-	        startActivity(new Intent(this, AboutView.class));
-	        return true;
-	    default:
-	        return super.onOptionsItemSelected(item);
+            case R.id.about:
+                startActivity(new Intent(this, AboutView.class));
+                return true;
+            case R.id.donate:
+                startActivity(new Intent(this, DonateView.class));
+                return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
 	    }
 	}
 
