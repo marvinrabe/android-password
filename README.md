@@ -1,4 +1,4 @@
-# Password generator #
+# Password Generator #
 
 This is a password generator for android mobile phones. It is ad-free and licenced under a GNU-license. In first case this generator is developed for educational purposes.
 
