@@ -47,10 +47,38 @@
 		android:layout_height="wrap_content"
 		android:linksClickable="true">
 	 </TextView>
+
+        <TextView
+                android:layout_below="@+id/textView4"
+                android:id="@+id/textView5"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="@string/author_other"
+                android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+                android:id="@+id/textView6"
+                android:layout_below="@+id/textView5"
+                android:layout_width="fill_parent"
+                android:textSize="11sp"
+                android:text="@string/info_actionbar"
+                android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+                android:id="@+id/textView7"
+                android:layout_below="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:textSize="11sp"
+                android:text="@string/info_donate"
+                android:layout_height="wrap_content">
+        </TextView>
 	<TextView
-		android:layout_below="@+id/textView4"
+		android:layout_below="@+id/textView7"
 		android:layout_width="fill_parent"
-		android:layout_marginTop="20dp"
+		android:layout_marginTop="10dp"
 		android:textSize="11sp"
 		android:text="@string/info_icons"
 		android:layout_height="wrap_content">

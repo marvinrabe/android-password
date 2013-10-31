@@ -21,4 +21,11 @@ If you want to compile it by hand then you need the current Android SDK and Acti
 
 ## License ##
 
-You can modify and redistribute it under the terms of the GNU GPL 3. „Shuffle“ symbol from thenounproject.com collection.
+You can modify and redistribute it under the terms of the GNU GPL 3.
+
+Thanks to the creators of these libraries:
+
+* Actionbar Sherlock: http://actionbarsherlock.com/
+* Donation library: https://github.com/dschuermann/android-donations-lib
+
+„Shuffle“ symbol from thenounproject.com collection.

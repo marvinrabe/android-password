@@ -38,4 +38,9 @@
     </string-array>
 
     <string name="donation_paypal_item">Password Generator Donation</string>
+    <string name="info_donate">Android Donations Lib by Dominik Schürmann.
+        https://github.com/dschuermann/android-donations-lib
+    </string>
+    <string name="info_actionbar">Actionbar Sherlock by Jake Wharton. http://actionbarsherlock.com/</string>
+    <string name="author_other">Third Party:</string>
 </resources>
